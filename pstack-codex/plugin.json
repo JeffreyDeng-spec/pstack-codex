@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "pstack-codex",
+  "version": "0.15.44+local.1",
+  "description": "Engineering workflows for Codex, adapted from pstack. Start with jeff-mode for scoped implementation, review and verification.",
+  "author": {
+    "name": "Lauren Tan"
+  },
+  "homepage": "https://github.com/JeffreyDeng-spec/pstack-codex",
+  "repository": "https://github.com/JeffreyDeng-spec/pstack-codex",
+  "license": "MIT",
+  "keywords": [
+    "pstack",
+    "jeff-mode",
+    "workflow",
+    "principles",
+    "agent-style",
+    "subagents",
+    "unslop"
+  ]
+}

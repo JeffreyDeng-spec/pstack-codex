@@ -1,0 +1,19 @@
+{
+  "name": "pstack-codex",
+  "version": "0.15.44+local.1",
+  "description": "Engineering workflows for Codex, adapted from pstack. Start with jeff-mode for scoped implementation, review and verification.",
+  "author": {
+    "name": "Lauren Tan"
+  },
+  "homepage": "https://github.com/JeffreyDeng-spec/pstack-codex",
+  "repository": "https://github.com/JeffreyDeng-spec/pstack-codex",
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "pstack-codex",
+    "shortDescription": "Engineering playbooks and verification for Codex.",
+    "developerName": "Lauren Tan",
+    "category": "Developer Tools",
+    "logo": "./assets/logo.png"
+  }
+}
