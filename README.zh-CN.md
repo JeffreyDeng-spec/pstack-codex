@@ -12,7 +12,7 @@
 
 ## 跟原插件比，哪些决定变了？
 
-下表以 [pstack 0.15.44 的固定提交][upstream] 为基准。两侧链接指向实际的 Skill、剧本或脚本。
+下表以 [pstack 0.15.48 的固定提交][upstream] 为基准。两侧链接指向实际的 Skill、剧本或脚本。
 
 | 实际问题 | 原版 pstack | pstack-codex |
 | --- | --- | --- |
@@ -44,30 +44,30 @@ codex plugin add pstack-codex@pstack-codex
 | 比较两个接口 | [`architect`][architect] | 从调用者视角画两种用法，用一个小原型回答最不确定的问题。 |
 | 防止同类错误再次出现 | [`correct`][correct] | 找一个评审里反复提到的问题，写一条能抓住历史错误的检查。 |
 
-插件提供 58 个 Skill 和 22 个总入口剧本。Grok Bot 等外部服务需要单独配置连接。[全部 Skill][skills] · [工作流剧本][playbooks] · [Codex 适配说明][runtime]
+`0.15.48+local.1` 提供 59 个 Skill 和 22 个总入口剧本。新增的 [`reframe`](pstack-codex/skills/reframe/SKILL.md) 可以把模糊描述改写成更具体的需求。Grok Bot 等外部服务需要单独配置连接。[全部 Skill][skills] · [工作流剧本][playbooks] · [Codex 适配说明][runtime]
 
 ## 来源与许可证
 
 原作是 Lauren Tan 的 [pstack][upstream]，Codex 适配版由 JeffreyDeng-spec 维护。[MIT 许可证](LICENSE)
 
-[upstream]: https://github.com/cursor/plugins/tree/e58dd043600587dbaf58ba315e7f2b38373eeb43/pstack
+[upstream]: https://github.com/cursor/plugins/tree/9e278fe4d4ecd8bfe98b1b79bf4be662efb338cc/pstack
 [skills]: pstack-codex/skills
 [playbooks]: pstack-codex/skills/jeff-mode/playbooks
 [runtime]: pstack-codex/docs/harness/codex.md
 [how]: pstack-codex/skills/how/SKILL.md
-[up-how]: https://github.com/cursor/plugins/blob/e58dd043600587dbaf58ba315e7f2b38373eeb43/pstack/skills/how/SKILL.md
+[up-how]: https://github.com/cursor/plugins/blob/9e278fe4d4ecd8bfe98b1b79bf4be662efb338cc/pstack/skills/how/SKILL.md
 [arena]: pstack-codex/skills/arena/SKILL.md
-[up-arena]: https://github.com/cursor/plugins/blob/e58dd043600587dbaf58ba315e7f2b38373eeb43/pstack/skills/arena/SKILL.md
+[up-arena]: https://github.com/cursor/plugins/blob/9e278fe4d4ecd8bfe98b1b79bf4be662efb338cc/pstack/skills/arena/SKILL.md
 [recall]: pstack-codex/skills/recall/SKILL.md
-[up-recall]: https://github.com/cursor/plugins/blob/e58dd043600587dbaf58ba315e7f2b38373eeb43/pstack/skills/recall/SKILL.md
+[up-recall]: https://github.com/cursor/plugins/blob/9e278fe4d4ecd8bfe98b1b79bf4be662efb338cc/pstack/skills/recall/SKILL.md
 [teach]: pstack-codex/skills/teach/SKILL.md
-[up-teach]: https://github.com/cursor/plugins/blob/e58dd043600587dbaf58ba315e7f2b38373eeb43/pstack/skills/teach/SKILL.md
+[up-teach]: https://github.com/cursor/plugins/blob/9e278fe4d4ecd8bfe98b1b79bf4be662efb338cc/pstack/skills/teach/SKILL.md
 [plan]: pstack-codex/skills/jeff-mode/playbooks/multi-phase-plan.md
-[up-plan]: https://github.com/cursor/plugins/blob/e58dd043600587dbaf58ba315e7f2b38373eeb43/pstack/skills/poteto-mode/playbooks/multi-phase-plan.md
+[up-plan]: https://github.com/cursor/plugins/blob/9e278fe4d4ecd8bfe98b1b79bf4be662efb338cc/pstack/skills/poteto-mode/playbooks/multi-phase-plan.md
 [pr]: pstack-codex/skills/jeff-mode/playbooks/opening-a-pr.md
-[up-pr]: https://github.com/cursor/plugins/blob/e58dd043600587dbaf58ba315e7f2b38373eeb43/pstack/skills/poteto-mode/playbooks/opening-a-pr.md
+[up-pr]: https://github.com/cursor/plugins/blob/9e278fe4d4ecd8bfe98b1b79bf4be662efb338cc/pstack/skills/poteto-mode/playbooks/opening-a-pr.md
 [audit]: pstack-codex/skills/jeff-mode/scripts/worktree-audit.sh
-[up-audit]: https://github.com/cursor/plugins/blob/e58dd043600587dbaf58ba315e7f2b38373eeb43/pstack/skills/poteto-mode/scripts/worktree-audit.sh
+[up-audit]: https://github.com/cursor/plugins/blob/9e278fe4d4ecd8bfe98b1b79bf4be662efb338cc/pstack/skills/poteto-mode/scripts/worktree-audit.sh
 [cleanup]: pstack-codex/skills/jeff-mode/playbooks/worktree-cleanup.md
 [architect]: pstack-codex/skills/architect/SKILL.md
 [correct]: pstack-codex/skills/correct/SKILL.md

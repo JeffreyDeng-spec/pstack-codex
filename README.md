@@ -12,7 +12,7 @@ Ask the `how` skill where a save request starts. Upstream pstack assigns that qu
 
 ## What changes from pstack?
 
-The comparison uses [upstream pstack 0.15.44][upstream]. Each row links to the instructions or script behind the behavior.
+The comparison uses [upstream pstack 0.15.48][upstream]. Each row links to the instructions or script behind the behavior.
 
 | Decision | Upstream pstack | pstack-codex |
 | --- | --- | --- |
@@ -44,30 +44,30 @@ Use a specific skill when you already know the job:
 | Compare two interfaces | [`architect`][architect] | “Sketch both from the caller’s perspective. Use a small prototype to settle the open question.” |
 | Stop a recurring regression | [`correct`][correct] | “Find a repeated review finding and add a check that catches a real historical example.” |
 
-The package includes 58 skills and 22 main-workflow playbooks. External services such as Grok Bot need their own configured connection. [Browse the skills][skills] · [Explore the playbooks][playbooks] · [Read the runtime notes][runtime]
+Version `0.15.48+local.1` includes 59 skills and 22 main-workflow playbooks. [`reframe`](pstack-codex/skills/reframe/SKILL.md) helps turn a vague description into a more precise request. External services such as Grok Bot need their own configured connection. [Browse the skills][skills] · [Explore the playbooks][playbooks] · [Read the runtime notes][runtime]
 
 ## Credits and license
 
 Adapted from [pstack by Lauren Tan][upstream]. Codex adaptation maintained by JeffreyDeng-spec. [MIT License](LICENSE)
 
-[upstream]: https://github.com/cursor/plugins/tree/e58dd043600587dbaf58ba315e7f2b38373eeb43/pstack
+[upstream]: https://github.com/cursor/plugins/tree/9e278fe4d4ecd8bfe98b1b79bf4be662efb338cc/pstack
 [skills]: pstack-codex/skills
 [playbooks]: pstack-codex/skills/jeff-mode/playbooks
 [runtime]: pstack-codex/docs/harness/codex.md
 [how]: pstack-codex/skills/how/SKILL.md
-[up-how]: https://github.com/cursor/plugins/blob/e58dd043600587dbaf58ba315e7f2b38373eeb43/pstack/skills/how/SKILL.md
+[up-how]: https://github.com/cursor/plugins/blob/9e278fe4d4ecd8bfe98b1b79bf4be662efb338cc/pstack/skills/how/SKILL.md
 [arena]: pstack-codex/skills/arena/SKILL.md
-[up-arena]: https://github.com/cursor/plugins/blob/e58dd043600587dbaf58ba315e7f2b38373eeb43/pstack/skills/arena/SKILL.md
+[up-arena]: https://github.com/cursor/plugins/blob/9e278fe4d4ecd8bfe98b1b79bf4be662efb338cc/pstack/skills/arena/SKILL.md
 [recall]: pstack-codex/skills/recall/SKILL.md
-[up-recall]: https://github.com/cursor/plugins/blob/e58dd043600587dbaf58ba315e7f2b38373eeb43/pstack/skills/recall/SKILL.md
+[up-recall]: https://github.com/cursor/plugins/blob/9e278fe4d4ecd8bfe98b1b79bf4be662efb338cc/pstack/skills/recall/SKILL.md
 [teach]: pstack-codex/skills/teach/SKILL.md
-[up-teach]: https://github.com/cursor/plugins/blob/e58dd043600587dbaf58ba315e7f2b38373eeb43/pstack/skills/teach/SKILL.md
+[up-teach]: https://github.com/cursor/plugins/blob/9e278fe4d4ecd8bfe98b1b79bf4be662efb338cc/pstack/skills/teach/SKILL.md
 [plan]: pstack-codex/skills/jeff-mode/playbooks/multi-phase-plan.md
-[up-plan]: https://github.com/cursor/plugins/blob/e58dd043600587dbaf58ba315e7f2b38373eeb43/pstack/skills/poteto-mode/playbooks/multi-phase-plan.md
+[up-plan]: https://github.com/cursor/plugins/blob/9e278fe4d4ecd8bfe98b1b79bf4be662efb338cc/pstack/skills/poteto-mode/playbooks/multi-phase-plan.md
 [pr]: pstack-codex/skills/jeff-mode/playbooks/opening-a-pr.md
-[up-pr]: https://github.com/cursor/plugins/blob/e58dd043600587dbaf58ba315e7f2b38373eeb43/pstack/skills/poteto-mode/playbooks/opening-a-pr.md
+[up-pr]: https://github.com/cursor/plugins/blob/9e278fe4d4ecd8bfe98b1b79bf4be662efb338cc/pstack/skills/poteto-mode/playbooks/opening-a-pr.md
 [audit]: pstack-codex/skills/jeff-mode/scripts/worktree-audit.sh
-[up-audit]: https://github.com/cursor/plugins/blob/e58dd043600587dbaf58ba315e7f2b38373eeb43/pstack/skills/poteto-mode/scripts/worktree-audit.sh
+[up-audit]: https://github.com/cursor/plugins/blob/9e278fe4d4ecd8bfe98b1b79bf4be662efb338cc/pstack/skills/poteto-mode/scripts/worktree-audit.sh
 [cleanup]: pstack-codex/skills/jeff-mode/playbooks/worktree-cleanup.md
 [architect]: pstack-codex/skills/architect/SKILL.md
 [correct]: pstack-codex/skills/correct/SKILL.md
